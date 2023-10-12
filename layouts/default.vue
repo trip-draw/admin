@@ -4,7 +4,7 @@
       <Title>Tripdraw Admin</Title>
     </Head>
     <v-layout>
-      <v-app-bar flat>
+      <v-app-bar flat class="noto">
         <v-btn @click="navigateTo('/')"><h2>Tripdraw Admin</h2></v-btn>
         <v-spacer></v-spacer>
         <v-btn @click="toggleTheme" :icon="commentStore.icon"></v-btn>
@@ -45,4 +45,8 @@ const toggleTheme = () => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.noto {
+  font-family: "Noto Sans KR", Arial, Verdana, Tahoma, sans-serif;
+}
+</style>
