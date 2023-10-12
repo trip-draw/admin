@@ -22,7 +22,6 @@
           </v-menu>
         </v-btn>
       </v-app-bar>
-
       <v-main>
         <v-divider></v-divider>
         <slot />
