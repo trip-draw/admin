@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   ssr: false,
-  css: ["@mdi/font/css/materialdesignicons.min.css"],
+  css: [
+    "vuetify/lib/styles/main.sass",
+    "@mdi/font/css/materialdesignicons.min.css",
+  ],
   build: {
     transpile: ["vuetify"],
   },
@@ -9,7 +12,7 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
   },
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL || "",
