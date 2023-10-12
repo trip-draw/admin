@@ -24,24 +24,24 @@
     chalk "^2.4.2"
 
 "@babel/compat-data@^7.22.9":
-  version "7.22.20"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.22.20.tgz#8df6e96661209623f1975d66c35ffca66f3306d0"
-  integrity sha512-BQYjKbpXjoXwFW5jGqiizJQQT/aC7pFm9Ok1OWssonuguICi264lbgMzRp2ZMmRSlfkX6DsWDDcsrctK8Rwfiw==
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.23.2.tgz#6a12ced93455827037bfb5ed8492820d60fc32cc"
+  integrity sha512-0S9TQMmDHlqAZ2ITT95irXKfxN9bncq8ZCoJhun3nHL/lLUxd2NKBJYoNGWH7S0hz6fRQwWlAWn/ILM0C70KZQ==
 
 "@babel/core@^7.22.10", "@babel/core@^7.22.9", "@babel/core@^7.23.0":
-  version "7.23.0"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.23.0.tgz#f8259ae0e52a123eb40f552551e647b506a94d83"
-  integrity sha512-97z/ju/Jy1rZmDxybphrBuI+jtJjFVoz7Mr9yUQVVVi+DNZE333uFQeMOqcCIy1x3WYBIbWftUSLmbNXNT7qFQ==
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.23.2.tgz#ed10df0d580fff67c5f3ee70fd22e2e4c90a9f94"
+  integrity sha512-n7s51eWdaWZ3vGT2tD4T7J6eJs3QoBXydv7vkUM06Bf1cbVD2Kc2UrkzhiQwobfV7NwOnQXYL7UBJ5VPU+RGoQ==
   dependencies:
     "@ampproject/remapping" "^2.2.0"
     "@babel/code-frame" "^7.22.13"
     "@babel/generator" "^7.23.0"
     "@babel/helper-compilation-targets" "^7.22.15"
     "@babel/helper-module-transforms" "^7.23.0"
-    "@babel/helpers" "^7.23.0"
+    "@babel/helpers" "^7.23.2"
     "@babel/parser" "^7.23.0"
     "@babel/template" "^7.22.15"
-    "@babel/traverse" "^7.23.0"
+    "@babel/traverse" "^7.23.2"
     "@babel/types" "^7.23.0"
     convert-source-map "^2.0.0"
     debug "^4.1.0"
@@ -194,13 +194,13 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.22.15.tgz#694c30dfa1d09a6534cdfcafbe56789d36aba040"
   integrity sha512-bMn7RmyFjY/mdECUbgn9eoSY4vqvacUnS9i9vGAGttgFWesO6B4CYWA7XlpbWgBt71iv/hfbPlynohStqnu5hA==
 
-"@babel/helpers@^7.23.0":
-  version "7.23.1"
-  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.23.1.tgz#44e981e8ce2b9e99f8f0b703f3326a4636c16d15"
-  integrity sha512-chNpneuK18yW5Oxsr+t553UZzzAs3aZnFm4bxhebsNTeshrC95yA7l5yl7GBAG+JG1rF0F7zzD2EixK9mWSDoA==
+"@babel/helpers@^7.23.2":
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.23.2.tgz#2832549a6e37d484286e15ba36a5330483cac767"
+  integrity sha512-lzchcp8SjTSVe/fPmLwtWVBFC7+Tbn8LGHDVfDp9JGxpAY5opSaEFgt8UQvrnECWOTdji2mOWMz1rOhkHscmGQ==
   dependencies:
     "@babel/template" "^7.22.15"
-    "@babel/traverse" "^7.23.0"
+    "@babel/traverse" "^7.23.2"
     "@babel/types" "^7.23.0"
 
 "@babel/highlight@^7.22.13":
@@ -218,9 +218,9 @@
   integrity sha512-vvPKKdMemU85V9WE/l5wZEmImpCtLqbnTvqDS2U1fJ96KrxoW7KrXhNsNCblQlg8Ck4b85yxdTyelsMUgFUXiw==
 
 "@babel/plugin-proposal-decorators@^7.23.0":
-  version "7.23.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.23.0.tgz#66d9014173b3267a9ced3e69935138bc64ffb5c8"
-  integrity sha512-kYsT+f5ARWF6AdFmqoEEp+hpqxEB8vGmRWfw2aj78M2vTwS2uHW91EF58iFm1Z9U8Y/RrLu2XKJn46P9ca1b0w==
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.23.2.tgz#0b345a5754f48309fa50b7cd99075ef0295b12c8"
+  integrity sha512-eR0gJQc830fJVGz37oKLvt9W9uUIQSAovUl0e9sJ3YeO09dlcoBVYD3CLrjCj4qHdXmfiyTyFt8yeQYSN5fxLg==
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.22.15"
     "@babel/helper-plugin-utils" "^7.22.5"
@@ -274,9 +274,9 @@
     "@babel/plugin-syntax-typescript" "^7.22.5"
 
 "@babel/standalone@^7.22.9":
-  version "7.23.1"
-  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.23.1.tgz#d91957e5d32a335e66764546dd3c19ebd7240c0c"
-  integrity sha512-a4muOYz1qUaSoybuUKwK90mRG4sf5rBeUbuzpuGLzG32ZDE/Y2YEebHDODFJN+BtyOKi19hrLfq2qbNyKMx0TA==
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.23.2.tgz#1c6348bab159d24623907eb5866393bc7ab5a380"
+  integrity sha512-VJNw7OS26JvB6rE9XpbT6uQeQIEBWU5eeHGS4VR/+/4ZoKdLBXLcy66ZVJ/9IBkK1RMp8B0cohvhzdKWtJAGmg==
 
 "@babel/template@^7.22.15", "@babel/template@^7.22.5":
   version "7.22.15"
@@ -287,10 +287,10 @@
     "@babel/parser" "^7.22.15"
     "@babel/types" "^7.22.15"
 
-"@babel/traverse@^7.22.5", "@babel/traverse@^7.23.0":
-  version "7.23.0"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.23.0.tgz#18196ddfbcf4ccea324b7f6d3ada00d8c5a99c53"
-  integrity sha512-t/QaEvyIoIkwzpiZ7aoSKK8kObQYeF7T2v+dazAYCb8SXtp58zEVkWW7zAnju8FNKNdr4ScAOEDmMItbyOmEYw==
+"@babel/traverse@^7.22.5", "@babel/traverse@^7.23.2":
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.23.2.tgz#329c7a06735e144a506bdb2cad0268b7f46f4ad8"
+  integrity sha512-azpe59SQ48qG6nu2CzcMLbxUudtN+dOM9kDbUqGq3HXUJRlo7i8fvPoxQUzYgLZ4cMVmuZgm8vvBpNeRhd6XSw==
   dependencies:
     "@babel/code-frame" "^7.22.13"
     "@babel/generator" "^7.23.0"
@@ -634,11 +634,11 @@
   integrity sha512-SWxvzRbUQRfewlIV+OF4/YF4DkeTjMWoT8Hh9yeU/5UBVdJZj9Uf4a9+cXjknSIhIaMxZ/4N1O/s7ojApOOGjg==
 
 "@netlify/functions@^2.0.2":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-2.2.1.tgz#05ecb64066d286716f7cd5546aa542a759fcf4a9"
-  integrity sha512-qx/yZF0/8mZHhxLG6U/OvHyq/lHsPXNeAtw85ELW7YYYXV4kVXnpjx1sM3H/eL+FiFTG8LwJes16agWingM2iQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-2.3.0.tgz#37e2ca41c0034a10de4addbdff7fbb8ec669e8c7"
+  integrity sha512-E3kzXPWMP/r1rAWhjTaXcaOT47dhEvg/eQUJjRLhD9Zzp0WqkdynHr+bqff4rFNv6tuXrtFZrpbPJFKHH0c0zw==
   dependencies:
-    "@netlify/serverless-functions-api" "1.8.0"
+    "@netlify/serverless-functions-api" "1.9.0"
     is-promise "^4.0.0"
 
 "@netlify/node-cookies@^0.1.0":
@@ -646,10 +646,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/node-cookies/-/node-cookies-0.1.0.tgz#dda912ba618527695cf519fafa221c5e6777c612"
   integrity sha512-OAs1xG+FfLX0LoRASpqzVntVV/RpYkgpI0VrUnw2u0Q1qiZUzcPffxRK8HF3gc4GjuhG5ahOEMJ9bswBiZPq0g==
 
-"@netlify/serverless-functions-api@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@netlify/serverless-functions-api/-/serverless-functions-api-1.8.0.tgz#50fd96c0d4ac844b3c7502aaff30fc1205c9f563"
-  integrity sha512-+dsowkoEA+LF4wS9kKafToHNSace7MxD2q3pgBik3N8UjAXBZo7J9t/E7rpkcm5w2ZXklvrDM815bOrzfDE5Jg==
+"@netlify/serverless-functions-api@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@netlify/serverless-functions-api/-/serverless-functions-api-1.9.0.tgz#3e58249e57350aee2c5143c282fddb4abbae4a9d"
+  integrity sha512-Jq4uk1Mwa5vyxImupJYXPP+I5yYcp3PtguvXtJRutKdm9DPALXfZVtCQzBWMNdZiqVWCM3La9hvaBsPjSMfeug==
   dependencies:
     "@netlify/node-cookies" "^0.1.0"
     urlpattern-polyfill "8.0.2"
@@ -2261,9 +2261,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.549"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.549.tgz#ab223f5d85c55a9def358db163bc8cacba72df69"
-  integrity sha512-gpXfJslSi4hYDkA0mTLEpYKRv9siAgSUgZ+UWyk+J5Cttpd1ThCVwdclzIwQSclz3hYn049+M2fgrP1WpvF8xg==
+  version "1.4.551"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.551.tgz#14db6660a88f66ce095ea2657abe5653bc7f42ed"
+  integrity sha512-/Ng/W/kFv7wdEHYzxdK7Cv0BHEGSkSB3M0Ssl8Ndr1eMiYeas/+Mv4cNaDqamqWx6nd2uQZfPz6g25z25M/sdw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5122,9 +5122,9 @@ undici-types@~5.25.1:
   integrity sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==
 
 undici@^5.23.0:
-  version "5.26.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.26.0.tgz#e3ea0843574b7abd90fa3240954ee82bf9c8fb3e"
-  integrity sha512-MLqGMyaJk2ubSl7FrmWuV7ZOsYWmdF7gcBHDRxm4AR8NoodQhgy3vO/D1god79HoetxR0uAeVNB65yj2lNRQnQ==
+  version "5.26.3"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.26.3.tgz#ab3527b3d5bb25b12f898dfd22165d472dd71b79"
+  integrity sha512-H7n2zmKEWgOllKkIUkLvFmsJQj062lSm3uA4EYApG8gLuiOM0/go9bIoC3HVaSnfg4xunowDE2i9p8drkXuvDw==
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
