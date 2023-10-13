@@ -4,8 +4,18 @@
     <v-btn
       color="primary"
       elevation="2"
+      @click="v"
       outlined
       rounded
     >Click</v-btn>
   </div>
 </template>
+
+<script setup="ts">
+import { usePostStore } from '~/stores/post';
+
+const postStore = usePostStore();
+const v = async () => {
+  const error = await postStore.search();
+};
+</script>
