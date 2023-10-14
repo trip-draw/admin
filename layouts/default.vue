@@ -6,6 +6,7 @@
     <v-layout>
       <v-app-bar flat class="noto">
         <v-btn @click="navigateTo('/')"><h2>Tripdraw Admin</h2></v-btn>
+        <v-btn @click="navigateTo('/trips')">여행 관리</v-btn>
         <v-spacer></v-spacer>
         <v-btn @click="toggleTheme" :icon="commentStore.icon"></v-btn>
         <v-btn variant="text" icon="mdi-account-outline">
