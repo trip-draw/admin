@@ -24,6 +24,14 @@ export const useTripStore = defineStore("trip", () => {
 
   const remove = async(id: any) => {
     items.value.items = items.value.items.filter(item => item.tripId !== id);
+
+    const { data, error } = await useFetch(
+      useRuntimeConfig().public.baseUrl + "/admin/trips/" + id,
+      {
+        credentials: 'include',
+        method: "DELETE",
+      }
+    );
   }
 
   return { items, search, clear, remove  };
