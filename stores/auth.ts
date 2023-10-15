@@ -10,14 +10,16 @@ export const useAuthStore = defineStore(
       const { data, error } = await useFetch(
         useRuntimeConfig().public.baseUrl + "/admin/login",
         {
-          credentials: 'include',
+          credentials: "include",
           body: {
             email: email.value,
-            password: password.value
+            password: password.value,
           },
           method: "POST",
         }
       );
+      email.value = "";
+      password.value = "";
       return error;
     };
 

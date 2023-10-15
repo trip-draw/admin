@@ -35,6 +35,12 @@
         </v-card-item>
         <v-divider></v-divider>
       </v-card>
+      <v-snackbar v-model="loginAlert" location="bottom" color="white"
+        >로그인에 실패했습니다. 
+        <template v-slot:actions>
+          <v-btn color="error" @click="loginAlert = false"> 닫기 </v-btn>
+        </template>
+      </v-snackbar>
     </v-container>
   </div>
 </template>
