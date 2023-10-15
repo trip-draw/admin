@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-container>
-      <h2 class="likeText">여행 관리</h2>
       <v-row>
         <v-col
           v-for="trip in tripStore.items.items"
