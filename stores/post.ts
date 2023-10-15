@@ -26,7 +26,7 @@ export const usePostStore = defineStore("post", () => {
     items.value.items = items.value.items.filter((item) => item.postId !== id);
 
     const { data, error } = await useFetch(
-      useRuntimeConfig().public.baseUrl + "/admin/trips/" + id,
+      useRuntimeConfig().public.baseUrl + "/admin/posts/" + id,
       {
         credentials: "include",
         method: "DELETE",
