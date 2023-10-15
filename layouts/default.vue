@@ -7,6 +7,7 @@
       <v-app-bar flat class="noto">
         <v-btn @click="navigateTo('/')"><h2>트립드로우</h2></v-btn>
         <v-btn @click="navigateTo('/trips')">여행 관리</v-btn>
+        <v-btn @click="navigateTo('/posts')">감상 관리</v-btn>
         <v-spacer></v-spacer>
         <v-btn @click="toggleTheme" :icon="commentStore.icon"></v-btn>
         <v-btn variant="text" icon="mdi-account-outline">

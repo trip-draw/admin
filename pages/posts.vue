@@ -3,43 +3,18 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="trip in tripStore.items.items"
+          v-for="post in postStore.items.items"
           cols="12"
           sm="4"
           lg="4"
           xl="3"
           xxl="2"
-          :key="trip.name"
+          :key="post.title"
         >
           <v-card class="mx-auto" max-width="360">
-            <v-img :src="trip.imageUrl" height="200px" cover></v-img>
+            <v-img :src="post.postImageUrl" height="200px" cover></v-img>
 
-            <v-card-title>여행 제목: {{ trip.name }}</v-card-title>
-            <v-chip
-              size="small"
-              class="ma-2"
-              color="success"
-              text-color="white"
-              prepend-icon="mdi-account-outline"
-              variant="outlined"
-              v-if="trip.status == 'ONGOING'"
-              label
-            >
-              ONGOING
-            </v-chip>
-
-            <v-chip
-              size="small"
-              color="warning"
-              class="ma-2"
-              text-color="white"
-              prepend-icon="mdi-run"
-              variant="outlined"
-              v-if="trip.status == 'FINISHED'"
-              label
-            >
-              FINISHED
-            </v-chip>
+            <v-card-title>감상 제목: {{ post.title }}</v-card-title>
             <v-chip
               size="small"
               class="ma-2"
@@ -48,16 +23,26 @@
               variant="outlined"
               label
             >
-              위치 정보 수: {{ trip.route.length }}
+              {{ post.address }}
             </v-chip>
-
+            <v-chip
+              size="small"
+              class="ma-2"
+              text-color="white"
+              prepend-icon="mdi-clock-time-four-outline"
+              variant="outlined"
+              label
+            >
+              {{ parseDateTimeFormat(post.pointResponse.recordedAt) }}
+            </v-chip>
             <br />
+            <v-card-text>{{ post.writing }}</v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
                 color="error"
                 variant="outlined"
-                @click="showRemoveAlert(trip.tripId)"
+                @click="showRemoveAlert(post.postId)"
               >
                 삭제
               </v-btn>
@@ -97,25 +82,26 @@
 </template>
 
 <script lang="ts" setup>
-import { useTripStore } from "~/stores/trip";
+import { usePostStore } from "~/stores/post";
+import { parseDateTimeFormat } from "~~/util/date";
 
 const isIntersect = ref(false);
 const removeId = ref(0);
 const removeAlert = ref(false);
-const tripStore = useTripStore();
+const postStore = usePostStore();
 
 const searchNext = async () => {
   if (isIntersect.value) {
     return;
   }
   isIntersect.value = true;
-  await tripStore.search();
+  await postStore.search();
   isIntersect.value = false;
 };
 
 const clearAndSearch = async () => {
-  await tripStore.clear();
-  await tripStore.search();
+  await postStore.clear();
+  await postStore.search();
 };
 
 const showRemoveAlert = async (id: any) => {
@@ -124,8 +110,7 @@ const showRemoveAlert = async (id: any) => {
 };
 
 const remove = async () => {
-  await tripStore.remove(removeId.value);
-  console.log(removeId.value);
+  await postStore.remove(removeId.value);
   removeAlert.value = false;
 };
 

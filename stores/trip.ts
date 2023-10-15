@@ -7,7 +7,7 @@ export const useTripStore = defineStore("trip", () => {
     const { data, error } = await useFetch(
       useRuntimeConfig().public.baseUrl + "/admin/trips?limit=50",
       {
-        credentials: 'include',
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
@@ -20,19 +20,19 @@ export const useTripStore = defineStore("trip", () => {
 
   const clear = async () => {
     items.value = ref();
-  }
+  };
 
-  const remove = async(id: any) => {
-    items.value.items = items.value.items.filter(item => item.tripId !== id);
+  const remove = async (id: any) => {
+    items.value.items = items.value.items.filter((item) => item.tripId !== id);
 
     const { data, error } = await useFetch(
       useRuntimeConfig().public.baseUrl + "/admin/trips/" + id,
       {
-        credentials: 'include',
+        credentials: "include",
         method: "DELETE",
       }
     );
-  }
+  };
 
-  return { items, search, clear, remove  };
+  return { items, search, clear, remove };
 });
