@@ -9,7 +9,7 @@
             사용자
           </v-card-title>
           <br />
-          <v-card-text><h1>30</h1></v-card-text>
+          <v-card-text><h1> {{ statStore.item.memberCount }}</h1></v-card-text>
         </v-card>
       </v-col>
       <v-col>
@@ -19,7 +19,7 @@
             총 여행 수
           </v-card-title>
           <br />
-          <v-card-text><h1>30</h1></v-card-text>
+          <v-card-text><h1>{{ statStore.item.tripCount }}</h1></v-card-text>
         </v-card>
       </v-col>
       <v-col>
@@ -29,7 +29,7 @@
             위치 정보 수
           </v-card-title>
           <br />
-          <v-card-text><h1>30</h1></v-card-text>
+          <v-card-text><h1>{{ statStore.item.pointCount }}</h1></v-card-text>
         </v-card>
       </v-col>
       <v-col>
@@ -39,21 +39,18 @@
             총 감상 수
           </v-card-title>
           <br />
-          <v-card-text><h1>30</h1></v-card-text>
+          <v-card-text><h1>{{ statStore.item.postCount }}</h1></v-card-text>
         </v-card>
       </v-col>
     </v-row>
 
     <br>
-    <h1>트립드로우 화이팅</h1>
   </div>
 </template>
 
 <script setup="ts">
-import { usePostStore } from "~/stores/post";
+import { useStatStore } from "~/stores/stat";
 
-const postStore = usePostStore();
-const v = async () => {
-  const error = await postStore.search();
-};
+const statStore = useStatStore();
+await statStore.search();
 </script>
