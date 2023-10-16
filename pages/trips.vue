@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="trip in tripStore.items.items"
+          v-for="trip in tripStore.items"
           cols="12"
           sm="4"
           lg="4"
