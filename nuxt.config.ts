@@ -12,6 +12,15 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
+    server: {
+      proxy: {
+          "/api": {
+              target: process.env.BASE_URL,
+              changeOrigin: true,
+              rewrite: (path) => path.replace(/^\/api/, ''),
+          },
+      },
+  },
   },
   modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
   runtimeConfig: {

@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="post in postStore.items.items"
+          v-for="post in postStore.items"
           cols="12"
           sm="4"
           lg="4"
@@ -83,7 +83,7 @@
 
 <script lang="ts" setup>
 import { usePostStore } from "~/stores/post";
-import { parseDateTimeFormat } from "~~/util/date";
+import { parseDateTimeFormat } from "~/util/date";
 
 const isIntersect = ref(false);
 const removeId = ref(0);

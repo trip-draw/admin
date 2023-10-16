@@ -8,7 +8,7 @@ export const useAuthStore = defineStore(
 
     const login = async () => {
       const { data, error } = await useFetch(
-        useRuntimeConfig().public.baseUrl + "/admin/login",
+        "/api/admin/login",
         {
           credentials: "include",
           body: {
