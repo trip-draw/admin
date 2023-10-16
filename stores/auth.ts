@@ -5,6 +5,7 @@ export const useAuthStore = defineStore(
   () => {
     const email = ref("");
     const password = ref("");
+    const isLogined = ref(false);
 
     const login = async () => {
       const { data, error } = await useFetch(
@@ -20,10 +21,13 @@ export const useAuthStore = defineStore(
       );
       email.value = "";
       password.value = "";
+      if (!error.value) {
+        isLogined.value = true;
+      }
       return error;
     };
 
-    return { email, password, login };
+    return { email, password, login, isLogined };
   },
   { persist: true }
 );
