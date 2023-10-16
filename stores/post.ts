@@ -15,7 +15,7 @@ export const usePostStore = defineStore("post", () => {
       param = "&lastViewId=" + items.value[items.value.length - 1].postId;
     }
     const { data, error } = await useFetch(
-      "/api/admin/posts?limit=10" + param,
+      useRuntimeConfig().public.baseUrl + "/admin/posts?limit=10" + param,
       {
         credentials: "include",
         headers: {
@@ -43,7 +43,7 @@ export const usePostStore = defineStore("post", () => {
     items.value = items.value.filter((item) => item.postId !== id);
 
     const { data, error } = await useFetch(
-      "/api/admin/posts/" + id,
+      useRuntimeConfig().public.baseUrl + "/admin/posts/" + id,
       {
         credentials: "include",
         method: "DELETE",
